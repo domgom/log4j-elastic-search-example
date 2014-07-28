@@ -3,6 +3,7 @@ package com.thomascook.test;
 import java.io.IOException;
 import java.net.URL;
 
+import org.apache.log4j.LogManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,9 +12,8 @@ import com.google.common.io.Resources;
 
 public class Main {
 
-	//private static Logger LOGGER = LoggerFactory.getLogger(Main.class);
 	private static Logger LOGGER = LoggerFactory.getLogger("AVAIL_RQ");
-	
+
 	/**
 	 * @param args
 	 */
@@ -24,10 +24,10 @@ public class Main {
 			String text = Resources.toString(url, Charsets.UTF_8);
 
 			LOGGER.info(text);
-			
-
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
+//		LogManager.shutdown();
 	}
 }

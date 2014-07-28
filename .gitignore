@@ -1,5 +1,11 @@
-target/
-.project
-.settings/org.eclipse.jdt.core.prefs
-.settings/org.eclipse.m2e.core.prefs
-.classpath
+elasticsearchlog4jappender/.classpath
+elasticsearchlog4jappender/.project
+test-client/.classpath
+test-client/.project
+test-client/target/
+elasticsearchlog4jappender/.settings/org.eclipse.jdt.core.prefs
+elasticsearchlog4jappender/.settings/org.eclipse.m2e.core.prefs
+test-client/.settings/org.eclipse.jdt.core.prefs
+test-client/.settings/org.eclipse.m2e.core.prefs
+elasticsearchlog4jappender/target/
+elasticsearchlog4jappender/.settings/org.eclipse.core.resources.prefs

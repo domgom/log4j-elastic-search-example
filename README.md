@@ -16,13 +16,24 @@ One-jar application that logs events in elastic search using the log4j elastic s
 Check service is running and indexes are created in http://localhost:9200/_stats 
 
 
-###2) Compilation
+###2) Compilation of both projects
+
+`cd elasticsearchlog4jappender`
 
 `mvn clean install`
 
-`cd target`
+`cd ..`
+
+`cd test-client`
+
+`mvn clean install`
+
 
 ###3) Print some log using log4j
+
+`cd test-client`
+
+`cd target`
 
 `java -jar test-0.0.1-SNAPSHOT.one-jar.jar`
 
