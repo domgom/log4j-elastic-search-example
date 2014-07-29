@@ -3,7 +3,6 @@ package com.thomascook.test;
 import java.io.IOException;
 import java.net.URL;
 
-import org.apache.log4j.LogManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,6 +23,7 @@ public class Main {
 			String text = Resources.toString(url, Charsets.UTF_8);
 
 			LOGGER.info(text);
+			Another.log();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
